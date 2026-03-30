@@ -1,0 +1,29 @@
+*,
+:root::before,
+:root::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: calc(1980px * 0.4);
+}
+
+#root {
+  text-align: center;
+
+  display: grid;
+  grid-template-rows: 5rem 50rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+h1 {
+  padding: 1rem;
+  grid-column: 1 / 3;
+}
+
+.container {
+}

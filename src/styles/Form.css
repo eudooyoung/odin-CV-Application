@@ -1,0 +1,35 @@
+form {
+  margin: 1rem;
+
+  display: grid;
+  grid-template-rows: 8rem 10rem 12rem 4rem;
+  row-gap: 1rem;
+}
+
+fieldset {
+  padding: 1rem;
+
+  display: grid;
+  align-items: center;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr auto;
+  justify-items: start;
+}
+
+input {
+  /* justify-self: center; */
+}
+
+button {
+  place-self: center;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+}
