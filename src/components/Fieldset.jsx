@@ -1,4 +1,3 @@
-import { initialItems } from "./data";
 import Input from "./Input";
 
 export default function Fieldset({ legend, categoryItems }) {

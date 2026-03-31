@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Input({ item }) {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(item.value);
 
   const inputHandling = (e) => {
     setValue(e.target.value);
@@ -9,7 +9,7 @@ export default function Input({ item }) {
 
   return (
     <input
-      id={"item" + item.id}
+      id={`I-${item.id}`}
       value={value}
       type={item.type}
       onChange={inputHandling}

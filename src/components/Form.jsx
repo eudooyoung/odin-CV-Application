@@ -3,16 +3,17 @@ import Fieldset from "./Fieldset";
 import { categories } from "./data";
 
 export default function Form({ items }) {
-  const categoryItems = (categoryId) =>
+  const getCategoryItems = (categoryId) =>
     items.filter((item) => item.categoryId === categoryId);
 
   return (
     <form>
+      <h2>Input Form</h2>
       {categories.map((category) => (
         <Fieldset
           key={category.id}
           legend={category.title}
-          categoryItems={categoryItems(category.id)}
+          categoryItems={getCategoryItems(category.id)}
         />
       ))}
     </form>

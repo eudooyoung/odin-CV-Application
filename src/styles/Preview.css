@@ -1,0 +1,11 @@
+.preview {
+  margin: 1rem;
+
+  display: grid;
+  grid-template-rows: auto 8rem 10rem 12rem;
+  row-gap: 2rem;
+}
+
+.preview > section {
+  text-align: left;
+}

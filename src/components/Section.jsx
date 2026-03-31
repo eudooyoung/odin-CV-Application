@@ -1,8 +1,17 @@
-export default function Section({ className, title, content }) {
+import "../styles/Section.css";
+
+export default function Section({ title, categoryItems }) {
   return (
-    <section className={className}>
-      <h2>{title}</h2>
-      {content}
+    <section>
+      <h3>{title}</h3>
+      {categoryItems.map((item) => {
+        return (
+          <div key={item.id}>
+            <span>{item.label}: </span>
+            <span>{item.value}</span>
+          </div>
+        );
+      })}
     </section>
   );
 }

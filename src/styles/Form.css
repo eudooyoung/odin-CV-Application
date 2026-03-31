@@ -2,7 +2,7 @@ form {
   margin: 1rem;
 
   display: grid;
-  grid-template-rows: 8rem 10rem 12rem 4rem;
+  grid-template-rows: auto 8rem 10rem 12rem;
   row-gap: 2rem;
 }
 
@@ -22,14 +22,4 @@ label {
   grid-auto-flow: column;
   grid-template-columns: 1fr auto;
   justify-items: start;
-}
-
-input {
-  /* justify-self: center; */
-}
-
-button {
-  place-self: center;
-  padding: 0 1rem;
-  font-size: 1.3rem;
 }
