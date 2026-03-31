@@ -1,14 +1,10 @@
 import { initialItems } from "./data";
 import Input from "./Input";
 
-export default function Fieldset({ category }) {
-  const categoryItems = initialItems.filter(
-    (item) => item.categoryId === category.id,
-  );
-
+export default function Fieldset({ legend, categoryItems }) {
   return (
     <fieldset>
-      <legend>{category.title}</legend>
+      <legend>{legend}</legend>
       {categoryItems.map((item) => {
         return (
           <label key={item.id}>

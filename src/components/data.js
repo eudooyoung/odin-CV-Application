@@ -19,83 +19,85 @@ export const initialItems = [
     categoryId: 0,
     label: "Name",
     value: "",
-    type: "text"
+    type: "text",
   },
   {
     id: 1,
     categoryId: 0,
     label: "Email",
     value: "",
-    type: "email"
+    type: "email",
   },
   {
     id: 2,
     categoryId: 0,
     label: "Phone",
     value: "",
-    type: "tel"
+    type: "tel",
   },
   {
     id: 3,
     categoryId: 1,
     label: "School name",
     value: "",
-    type: "text"
+    type: "text",
   },
   {
     id: 4,
     categoryId: 1,
     label: "Title of study",
     value: "",
-    type: "text"
+    type: "text",
   },
   {
     id: 5,
     categoryId: 1,
     label: "Date from",
     value: "",
-    type: "date"
+    type: "date",
   },
   {
     id: 6,
     categoryId: 1,
     label: "Date until",
     value: "",
-    type: "date"
+    type: "date",
   },
   {
     id: 7,
     categoryId: 2,
     label: "Company name",
     value: "",
-    type: "text"
+    type: "text",
   },
   {
     id: 8,
     categoryId: 2,
     label: "Position title",
     value: "",
-    type: "text"
+    type: "text",
   },
   {
     id: 9,
     categoryId: 2,
     label: "Main responsibilites of your jobs",
     value: "",
-    type: "type"
+    type: "type",
   },
   {
     id: 10,
     categoryId: 2,
     label: "Date from",
     value: "",
-    type: "date"
+    type: "date",
   },
   {
     id: 11,
     categoryId: 2,
     label: "Date until",
     value: "",
-    type: "date"
+    type: "date",
   },
 ];
+
+export const VIEWMODE = ["edit", "view"];

@@ -1,15 +1,20 @@
+import "../styles/Form.css";
 import Fieldset from "./Fieldset";
 import { categories } from "./data";
-import "../styles/Form.css";
-import Button from "./Button";
 
-export default function Form() {
+export default function Form({ items }) {
+  const categoryItems = (categoryId) =>
+    items.filter((item) => item.categoryId === categoryId);
+
   return (
     <form>
       {categories.map((category) => (
-        <Fieldset key={category.id} category={category} />
+        <Fieldset
+          key={category.id}
+          legend={category.title}
+          categoryItems={categoryItems(category.id)}
+        />
       ))}
-      <Button title={"Submit"} />
     </form>
   );
 }

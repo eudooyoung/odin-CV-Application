@@ -3,7 +3,7 @@ form {
 
   display: grid;
   grid-template-rows: 8rem 10rem 12rem 4rem;
-  row-gap: 1rem;
+  row-gap: 2rem;
 }
 
 fieldset {
