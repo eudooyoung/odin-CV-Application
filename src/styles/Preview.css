@@ -6,6 +6,23 @@
   row-gap: 2rem;
 }
 
-.preview > section {
+section {
   text-align: left;
+  padding: 0 1rem;
+  box-shadow: 2px 2px 2px black;
+
+  display: grid;
+}
+
+.item-view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-view .label {
+  flex: 0 1 40%;
+}
+
+.item-view .value {
+  flex: 0 1 50%;
 }
